@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+
+/* Margin - Imaginary Space */
+/* Padding - Padding from within element (ie) space from within od element */
+
+#box1{
+    width: 200px;
+    height: 200px;
+    background-color: crimson;
+    padding-left: 80px;
+    padding-top: 60px;
+    position: absolute;
+    left: 20%;
+    z-index: 65;
+}
+
+#box2{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(236, 221, 201);
+    padding-left: 80px;
+    padding-top: 60px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 40%;
+    transform: translate(-50%, -50%);
+}
+
+#box3{
+    width: 200px;
+    height: 200px;
+    background-color: salmon;
+    padding-left: 80px;
+    padding-top: 60px;
+    position: absolute;
+    left: 30%;
+    z-index: 70;
+}
+
+
+button{
+    width: 100px;
+    height: 50px;
+    margin-left: 200px ;
+    margin-top: 100px;
+    background-color: black;
+    color: azure;
+    border: 3px solid white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: ease-in;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+}
+
+/* Transform translate
+
+makes the box centre
+
+translate x - x axis
+translate y - y axix*/
