@@ -1,0 +1,76 @@
+/* Transform rotate(deg) is used to rotate an element clockwise or counterclockwise. The rotation is defined by the angle of rotation in degrees. The rotation can be applied to the 2D plane (X and Y axis) or the 3D plane (X, Y, and Z axis).: 
+ x axis
+ Y axis
+ z axis
+ 
+ body{
+ perspective : 1000px}
+ 
+ Only then you can view the rotation
+ 
+ Also there is Skew and Scale in transform
+
+ Position absolute make the element rise and get free, whereas Position relative keeps the element in with respect to its parent element.*/
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+
+/* .box{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    border: 2px solid white;
+}
+
+.box:nth-child(2n){
+    background-color: blueviolet;
+target a element instead of using id & use nth last child for dooing it in reverse */
+
+.page{
+    height: 100%;
+    width: 100%;
+    background-color: blueviolet;
+}
+
+.page:nth-child(2)
+{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(169, 105, 229);
+}
+
+.page:nth-child(3)
+{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(177, 127, 224);
+}
+.page:nth-child(4)
+{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(194, 162, 224);
+}
+
+#box{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(29, 227, 227);
+    position: sticky;
+    top: 30%;
+}
+
+/* See, you cannot be using position absolute and move it accordingly as a developer because its not responsive as well.
+   So, we introduce display : flex. In flex, you can control elements in 2 axis Y axis (Align items) and x axis (Justify Content)
+   To use empty space, we use space between, space around etc..
+   x axis - main axis
+   y axis - cross axis*/
