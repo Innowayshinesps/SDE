@@ -35,7 +35,7 @@ body{
     background-color: blueviolet;
 target a element instead of using id & use nth last child for dooing it in reverse */
 
-.page{
+/* .page{
     height: 100%;
     width: 100%;
     background-color: blueviolet;
@@ -67,10 +67,32 @@ target a element instead of using id & use nth last child for dooing it in rever
     background-color: rgb(29, 227, 227);
     position: sticky;
     top: 30%;
-}
+} */
 
 /* See, you cannot be using position absolute and move it accordingly as a developer because its not responsive as well.
    So, we introduce display : flex. In flex, you can control elements in 2 axis Y axis (Align items) and x axis (Justify Content)
    To use empty space, we use space between, space around etc..
    x axis - main axis
-   y axis - cross axis*/
+   y axis - cross axis
+   
+   But with flex, you can work with only 1D direction at a time. That's why, Grid was introduced */
+
+   .parent{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    /* overflow: auto; to control overflow of div */
+    /* flex-wrap: wrap; To not shrink size */
+    /* gap: 20px; to provide gap 
+    row gap
+    col gap*/
+   }
+
+   .flexbox{
+    height: 200px;
+    width: 200px;
+    background-color: crimson;
+    border: 1px solid white;
+    /* flex-shrink: 0; to not let the element shrink */
+   }
