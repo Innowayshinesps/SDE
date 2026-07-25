@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-rows: 10% 60% 30%;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-areas: "top-center top-center top-center"
+    "left-center left-center right-bottom" "left-left left-right right-bottom";
+  
+}
+
+.top-center{
+    background-color: chartreuse;
+    grid-area: top-center;
+}
+
+.left-center{
+    background-color: aquamarine;
+    grid-area: left-center;
+}
+
+.left-left{
+    background-color: blue;
+    grid-area: left-left;
+}
+
+.left-right{
+    background-color: crimson;
+    grid-area: left-right;
+}
+
+ .right-bottom{
+    background-color: brown;
+    grid-area: right-bottom;
+ }
