@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: grid;
+    /* Adjusted row heights to sum to 100% */
+    grid-template-rows: 30% 25% 15% 10% 20%;
+    grid-template-columns: 30% 15% 5% 30% 20%;
+    grid-template-areas: 
+        "left-top    center-top1    center-top1    center-top2    right-top"
+        "left-top    center         center         center         right-top"
+        "left-bottom center         center         center         right-top"
+        "left-bottom center         center         center         right-bottom"
+        "left-bottom center-bottom1 center-bottom1 center-bottom2 right-bottom";
+}
+
+.left-top {
+    background-color: beige;
+    grid-area: left-top;
+}
+
+.left-bottom {
+    background-color: rgb(220, 220, 46);
+    grid-area: left-bottom;
+}
+
+.center-top1 {
+    background-color: rgb(171, 110, 61);
+    grid-area: center-top1;
+}
+
+.center-top2 {
+    background-color: rgb(133, 232, 124);
+    grid-area: center-top2; /* Fixed missing semicolon */
+}
+
+.center {
+    background-color: rgb(151, 227, 242);
+    grid-area: center;
+}
+
+.center-bottom1 {
+    background-color: rgb(244, 166, 226);
+    grid-area: center-bottom1;
+}
+
+.center-bottom2 {
+    background-color: rgb(239, 162, 163);
+    grid-area: center-bottom2;
+}
+
+.right-top {
+    background-color: aquamarine;
+    grid-area: right-top;
+}
+
+.right-bottom {
+    background-color: rgb(158, 158, 246);
+    grid-area: right-bottom;
+}
